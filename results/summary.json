@@ -1,0 +1,63 @@
+{
+  "data": {
+    "start": "2025-11-21 17:26:00+00:00",
+    "end": "2026-09-27 17:49:00+00:00",
+    "minutes": 404347,
+    "segments": 28,
+    "coverage": {
+      "target": 1.0,
+      "ex_b": 0.954,
+      "ex_c": 0.928,
+      "usd_spot": 1.0,
+      "usd_next": 1.0,
+      "herat_spot": 0.997,
+      "herat_next": 1.0
+    }
+  },
+  "chosen_settings": {
+    "zscore_rule": {
+      "window": 1440,
+      "entry": 2.0,
+      "max_hold": 240
+    },
+    "thresholds": {
+      "logit": 0.65,
+      "gbm": 0.7
+    },
+    "horizon_min": 60,
+    "base_cost_pct": 0.1
+  },
+  "auc": {
+    "logit_validation": 0.6526073201847307,
+    "logit_test": 0.6680320782441791,
+    "gbm_validation": 0.6715801186977047,
+    "gbm_test": 0.701522824748047
+  },
+  "n_rule_configs_tried": 24,
+  "live_signal_audit": {
+    "n_signals": 7224,
+    "first": "2026-07-13 22:19:00+00:00",
+    "last": "2026-09-27 13:02:00+00:00",
+    "h30": {
+      "buy_hit_rate": 0.5803470813612801,
+      "sell_hit_rate": 0.6117689271618227,
+      "base_rate_up": 0.49338558628176116,
+      "median_move_after_buy_pct": 0.03851336452185272,
+      "median_move_after_sell_pct": -0.04353424678936735
+    },
+    "h60": {
+      "buy_hit_rate": 0.632183908045977,
+      "sell_hit_rate": 0.6038751345532831,
+      "base_rate_up": 0.511471730050965,
+      "median_move_after_buy_pct": 0.07450729002822509,
+      "median_move_after_sell_pct": -0.06208556156397371
+    },
+    "h240": {
+      "buy_hit_rate": 0.6939373450529637,
+      "sell_hit_rate": 0.6512378902045209,
+      "base_rate_up": 0.5416827657264816,
+      "median_move_after_buy_pct": 0.18790707966130915,
+      "median_move_after_sell_pct": -0.12093895513004549
+    }
+  }
+}
