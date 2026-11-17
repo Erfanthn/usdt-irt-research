@@ -1,0 +1,34 @@
+# --- Data: the real dataset is never committed ---
+data/*
+!data/sample/
+data/sample/*
+!data/sample/.gitkeep
+*.csv.gz
+*.parquet
+*.db
+*.sqlite
+
+# --- Secrets ---
+.env
+.env.*
+*.pem
+*.key
+*creds*
+*secret*
+config_local.py
+*.session
+*.session-journal
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
